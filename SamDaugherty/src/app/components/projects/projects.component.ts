@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { ProjectComponent } from '../project/project.component';
+import { NgFor } from '@angular/common';
+import { Project, ProjectsData } from '../../data/projects.data';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  standalone: true
+  standalone: true,
+  imports: [ProjectComponent, NgFor]
 })
 export class ProjectsComponent {
-  openLink(url: string) {
-    window.open(url, '_blank');
-  }
+  projects: Project[] = ProjectsData.projects;
 }
