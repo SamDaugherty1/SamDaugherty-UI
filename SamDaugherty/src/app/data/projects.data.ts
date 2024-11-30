@@ -13,7 +13,7 @@ export class ProjectsData {
       description: 'After being tired of using poorly designed planning poker apps spammed with ads, I decided to build my own - without ads :)',
       imageUrl: 'PlanningPoker.png',
       link: 'https://planningpoker.agiledevelopers.org',
-      technologies: ['React', 'Node.js']
+      technologies: ['Angular', '. NET', 'SignalR']
     }
   ];
 }
